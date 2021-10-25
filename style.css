@@ -1,0 +1,201 @@
+@media (min-width: 100px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: white;
+    text-align: center;
+  }
+}
+
+/********** navbar **********/
+nav {
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  background-color: brown;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding-right: 60px;
+  margin: 15px 0;
+}
+
+nav a {
+  margin: 20px;
+  font-size: 25px;
+  text-decoration: none;
+  color: azure;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+nav a::after {
+  border-radius: 1em;
+  border-top: 5px solid #ff7f50;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 0.14em;
+  left: 0;
+  transition: right 0.4s cubic-bezier(0, 0.5, 0, 1);
+}
+
+nav a:hover::after {
+  right: 0;
+}
+
+/********** Welcome Section  **********/
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+#welcome-section h1 {
+  font-size: 6rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 5px 0;
+}
+
+#welcome-section p {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: #be3144;
+  margin: 0;
+}
+
+#welcome-section img {
+  border-radius: 50%;
+}
+
+#welcome-section span {
+  border-bottom: 3px solid white;
+}
+
+/********** project section **********/
+#projects {
+  background-color: #45567d;
+  height: 100vh;
+  padding-bottom: 200px;
+  justify-content: center;
+}
+
+#projects h2 {
+  /* display: flex; */
+  margin: 0 300px;
+  padding: 70px 0 5px 0;
+  border-bottom: 1px solid white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin: 1em auto;
+  padding: 0 100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #303841;
+  margin: 0;
+  /* max-width: 30%;/ */
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card p {
+  margin: 5px 0 10px;
+  
+}
+
+.card code {
+  visibility: hidden;
+  margin: 0 10px;
+  color: #ff7f50;
+}
+
+.card:hover code {
+  visibility: visible;
+}
+
+#projects a,
+#contact a {
+  font-size: 25px;
+  text-decoration: none;
+  color: azure;
+  font-weight: bold;
+  /* margin: 5px; */
+}
+
+button {
+  background-color: #303841;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: #be3144;
+}
+
+/********** contact section **********/
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  /* width: 100%; */
+  background-color: #303841;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+
+#contact h2 {
+  border-bottom: 3px solid #be3144;
+}
+
+#contact ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+}
+
+.fab,
+.fas {
+  margin: 5px;
+}
+
+#contact a {
+  margin: 10px;
+}
+
+#contact li {
+  transition: transform 0.3s ease-out;
+}
+
+#contact li:hover {
+  transform: translate(0px, 10px);
+}
