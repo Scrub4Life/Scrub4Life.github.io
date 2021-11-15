@@ -40,7 +40,7 @@ nav a {
   padding-bottom: 5px;
 }
 
-nav a::after {
+/* nav a::after {
   border-radius: 1em;
   border-top: 5px solid #ff7f50;
   content: "";
@@ -53,7 +53,7 @@ nav a::after {
 
 nav a:hover::after {
   right: 0;
-}
+} */
 
 /********** Welcome Section  **********/
 #welcome-section {
@@ -82,6 +82,8 @@ nav a:hover::after {
 }
 
 #welcome-section img {
+  max-width: 250px;
+  max-height: 250px;
   border-radius: 50%;
 }
 
@@ -126,7 +128,6 @@ nav a:hover::after {
 
 .card p {
   margin: 5px 0 10px;
-  
 }
 
 .card code {
